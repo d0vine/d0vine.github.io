@@ -10,7 +10,7 @@ permalink: /about/
 
 ### Hobbies: :computer: :unlock: :book: :saxophone:
 
-As you have probably figured out I like computers but that's not the only hobby I have (although one could argue whether that's a singe hobby or not). I read quite a lot of books (mostly fantasy/horror [Lovecraft :green_heart:]), cook (when I'm not lazy enough) and play saxophone. I also used to do some gamedev stuff although I don't enjoy it that much any longer.
+As you have probably figured out I like computers but that's not the only hobby I have (although one could argue whether that's a single hobby or not). I read quite a lot of books (mostly fantasy/horror [Lovecraft :green_heart:]), cook (when I'm not lazy enough) and play saxophone. I also used to do some gamedev stuff although I don't enjoy it that much any longer.
 
 ### Contact me
 
