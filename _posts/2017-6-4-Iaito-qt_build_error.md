@@ -4,7 +4,7 @@ title: Iaitō - build error with Qt Creator
 ---
 
 
-Today I've decided check out [Iaitō](https://github.com/hteso/iaito) - a frontend for the wonderful *radare2*. It seemed pretty neat (especially watching Hugo's great presentation ["Sweet tools o' mine"](https://www.youtube.com/watch?v=QSUeAJnqHqY) at t2/2016) so I've cloned the repository, installed Qt (5.3, as suggested in the repo), installed r2 from the submodule, opened the project with Qt Creator... and stopped right there.
+Today I've decided check out [Iaitō](https://github.com/hteso/iaito) - a frontend for the wonderful *radare2*. It seemed pretty neat (especially watching Hugo's great presentation ["Sweet tools o' mine"](https://www.youtube.com/watch?v=QSUeAJnqHqY) at t2/2016) so I've cloned the repository, installed Qt (5.6, as suggested in the repo), installed r2 from the submodule, opened the project with Qt Creator... and stopped right there.
 
 After running "Build" I saw an error:
 
