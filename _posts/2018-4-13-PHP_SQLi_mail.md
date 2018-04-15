@@ -64,6 +64,8 @@ Whoa! Why would that be possible? Well, the answer is obvious: because that is a
 
 This means that we can safely use `'` (which is used for injection in this case), `/*` and `*/` (comments used to achieve separation, just like spaces) and `#` (the comment to stop the other part of the query) in the local part. The rest is a matter of creativity ;)
 
+Cheers!
+
 <!--
 Why hello there! My name's Chris (can be Kris as well) and this is another attempt of mine at creating a blog-wannabe where I could put my thoughts and ideas.
 
