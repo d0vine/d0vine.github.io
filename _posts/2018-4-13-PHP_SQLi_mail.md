@@ -1,6 +1,6 @@
 ---
 layout: post
-title: misc 0x01 / SQL Injection with a valid e-mail address<!--PHP filter_var(FILTER_VALIDATE_EMAIL)-->
+title: misc 0x01 / SQL Injection with a valid e-mail address
 tags: [rozwal, sql-injection, php, filter, security, misc]
 ---
 
