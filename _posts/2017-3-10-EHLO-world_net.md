@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EHLO world.net
+title: misc 0x00 / EHLO world.net
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Iaitō - build error with Qt Creator
+title: code 0x00 / Iaitō - build error with Qt Creator
 ---
 
 
