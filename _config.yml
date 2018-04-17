@@ -11,6 +11,8 @@ description: Magician from /dev/mmcblk0p1
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/avatar.jpg
 
+highlighter: rouge
+
 #
 # Flags below are optional
 #
