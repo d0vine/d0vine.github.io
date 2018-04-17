@@ -11,7 +11,7 @@ Quite some time ago there was a challenge published on <a href="https://rozwal.t
 
 The code was roughly like this:
 
-{% highlight php %}
+```php
 <?php
 require 'db.php';
 if (isset($_GET['mail']))
@@ -31,36 +31,42 @@ if (isset($_GET['mail']))
 	}
 }
 ?>
-{% endhighlight %}
+```
 
 The validation is performed via the *filter_var* function with *FILTER_VALIDATE_EMAIL* as an argument. Let's have a quick look at <a href="http://php.net/manual/en/filter.filters.validate.php" target="_blank">the manual</a>:
 
-	Validates whether the value is a valid e-mail address.
+```
+Validates whether the value is a valid e-mail address.
 
-	In general, this validates e-mail addresses against the syntax in RFC 822, with the exceptions that comments and whitespace folding and dotless domain names are not supported.
+In general, this validates e-mail addresses against the syntax in RFC 822, with the exceptions that comments and whitespace folding and dotless domain names are not supported.
+```
 
 So, let's check the RFC! It can be found at <a href="https://www.w3.org/Protocols/rfc822/" target="_blank">https://www.w3.org/Protocols/rfc822/</a>.
 
 I'll skip a few steps and jump straight to a string that will, at the same time, be a valid e-mail and perform a very simple SQL injection:
 
-	'/**/and/**/1=0/**/union/**/select/**/'SQL+injection'/**/#@test.lul.topkek
+```
+'/**/and/**/1=0/**/union/**/select/**/'SQL+injection'/**/#@test.lul.topkek
+```
 
 Whoa! Why would that be possible? Well, the answer is obvious: because that is a valid e-mail! There is a nice little <a href="http://jkorpela.fi/rfc/822addr.html">page</a> that explains the RFC in a more human-friendly way:
 
-	addr-spec   =  local-part "@" domain
-	(...)
-	local-part  =  word *("." word)
+```
+addr-spec   =  local-part "@" domain
+(...)
+local-part  =  word *("." word)
 
-	
-	An word is either an atom or a quoted string.
 
-	An atom is a sequence of printable ASCII characters except space or any of the following:
-		()<>@,;:\".[]
+An word is either an atom or a quoted string.
 
-	Positively speaking, this means that the valid constituents of an atom are the following:
-		!"#$%&'*+-/0123456789=?
-		@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_
-		`abcdefghijklmnopqrstuvwxyz{|}~
+An atom is a sequence of printable ASCII characters except space or any of the following:
+    ()<>@,;:\".[]
+
+Positively speaking, this means that the valid constituents of an atom are the following:
+    !"#$%&'*+-/0123456789=?
+    @ABCDEFGHIJKLMNOPQRSTUVWXYZ^_
+    `abcdefghijklmnopqrstuvwxyz{|}~
+```
 
 This means that we can safely use `'` (which is used for injection in this case), `/*` and `*/` (comments used to achieve separation, just like spaces) and `#` (the comment to stop the other part of the query) in the local part. The rest is a matter of creativity ;)
 
