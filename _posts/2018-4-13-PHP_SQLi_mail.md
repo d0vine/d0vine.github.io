@@ -5,8 +5,9 @@ category: misc
 tags: [rozwal, sql-injection, php, filter, security, misc]
 ---
 
-
 There is no doubt some specifications (*cough cough* looking at you, Bluetooth!) are overly complicated. Not only is this a hindrance to those implementing it, but it can also cause security issues due to the many ways of bypassing the possible security mechanisms.
+
+<!--more-->
 
 Quite some time ago there was a challenge published on <a href="https://rozwal.to" target="_blank">rozwal.to</a> which involved an SQL injection with e-mail validation in PHP. If you were unfortunate enough to see <a href="http://www.ex-parrot.com/~pdw/Mail-RFC822-Address.html">the e-mail address validation regex</a>, you know the drill: e-mail address specification isn't exactly the most complicated one, but neither is it easy. ;)
 

@@ -5,9 +5,9 @@ category: ctf
 tags: [ctf, writeup, place, ctftime, shellraisers, hackover]
 ---
 
-
-
 As someone once said - `another weekend, another CTF`! This time our team - `Shellraisers` - participated in the `Hackover18 CTF` competition and we ended up at the 5th place, w00tw00t! Gotta say we did a great job as a team and if not for the cooperation, the place could've not been that good ;)
+
+<!--more-->
 
 ![Team progress](/images/ctf_0x00/progress.png)
 

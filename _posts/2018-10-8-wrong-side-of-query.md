@@ -7,9 +7,9 @@ tags: [ctf, writeup, place, ctftime, shellraisers, hackover18, web, john, dows, 
 
 ## Stalking at the wrong side [of query]
 
-```
-Howdy mate! Just login and hand out the flag, aye! You can find on h18johndoe has all you need!
-```
+
+> Howdy mate! Just login and hand out the flag, aye! You can find on h18johndoe has all you need!
+
 
 What's interesting, the `h18johndoe` name points to a file in an external git repository (on github): [user_repo.rb](https://github.com/h18johndoe/user_repository/blob/master/user_repo.rb)
 
