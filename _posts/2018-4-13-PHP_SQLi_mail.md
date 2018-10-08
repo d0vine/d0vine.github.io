@@ -12,7 +12,7 @@ Quite some time ago there was a challenge published on <a href="https://rozwal.t
 
 The code was roughly like this:
 
-{% highlight php %}
+```php
 <?php
 require 'db.php';
 if (isset($_GET['mail']))
@@ -32,7 +32,7 @@ if (isset($_GET['mail']))
 	}
 }
 ?>
-{% endhighlight %}
+```
 
 The validation was performed via the *filter_var* function with *FILTER_VALIDATE_EMAIL* as an argument. Let's have a quick look at <a href="http://php.net/manual/en/filter.filters.validate.php" target="_blank">the manual</a>:
 
