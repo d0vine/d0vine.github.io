@@ -11,7 +11,7 @@ tags: [ctf, writeup, clojure, shellraisers, hackover18, pwn, shell, interactive]
 >   
 > compiled with: native-image -H:+ReportUnsupportedElementsAtRuntime
 
-We get the [main.clj](https://ctf.hackover.de/files/2d2f2aec9a9f4917d25408680f5e60bd/main.clj) file, which is a Clojure script! Oh boy, that's another language I had nothing to do with (and neither had anyone from our team as far as I know). That does, however, explain the challenge title! "holy graal", since it's probably running on the [Graal VM](https://www.graalvm.org/). Okay, but back to the topic.
+We get the [main.clj](/files/ctf_0x02/main.clj) file, which is a Clojure script! Oh boy, that's another language I had nothing to do with (and neither had anyone from our team as far as I know). That does, however, explain the challenge title! "holy graal", since it's probably running on the [Graal VM](https://www.graalvm.org/). Okay, but back to the topic.
 
 <!--more-->
 
